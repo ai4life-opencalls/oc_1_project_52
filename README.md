@@ -13,7 +13,7 @@ In this OpenCall project, we tried to help scientists study and model microalgae
 >"The main research question is to observe how symbiotic microalgae inside hosts are morphologically remodeled using 3D electron microscopy such as FIB-SEM."  
 
 The main problem was **semantic segmentation** of Electron Microscopy 3D images (FIB-SEM) using any proper deep learning model. Unfortunately, there were not enough ground-truth annotations for training such a model. Also, doing manual annotations is very time-consuming and extremely expensive.  
-Therefore, we decided to hit this challenge using a different approach. We developed a *napari* plugin to train a *Random Forest* model using extracted embeddings of the *SAM* model for input and just a few scribble labels provided by the user. This approach can do the segmentation of desired organelles almost as well as manual segmentations but in a much shorter time with less manual effort. For the method details, see here.  
+Therefore, we decided to hit this challenge using a different approach. We developed a *napari* plugin to train a *Random Forest* model using extracted embeddings of the *SAM* model for input and just a few scribble labels provided by the user. This approach can do the segmentation of desired organelles almost as well as manual segmentations but in a much shorter time with less manual effort. For the method details, see [here](https://github.com/juglab/napari-sam-labeling-tools/blob/main/docs/index.md).  
 
 ## Installation
 It is highly recommended to use a python environment manager like conda to create a clean environment for the installation.
@@ -109,7 +109,7 @@ The number of required labels for having almost nice-looking segmentations compa
 
 #### Notes
 - If your stack is large, extracting embeddings can take a long time and creates a huge storage file. Therefore, it is recommended to use a sub-stack of the original stack by selecting a few slices from the beginning of the stack, a few in the middle, and a few slices from the end. Then use this sub-stack to train the RF model, save it, and then use it for prediction over the whole stack.  
-To do so, we provided a jupyter notebook that you can use with just setting the input and saved RF model path.  
+To do so, we provided a **[jupyter notebook](./run_pipeline_for_whole_stack/run_pipeline.ipynb)** that you can use with just setting the input and saved RF model path.  
 
 - Making a good segmentation using this SAM-RF widget needs a iterative process; meaning that first you add some labels, train the model, and then predict. Then to improve the results, iterate over and add more labels, train and predict, and so forth... .
 
