@@ -157,5 +157,6 @@ This widget works nicely for objects having more clear boundaries. It also can b
     - **Add Segmentations:** the result will be added to the selected layer. In other words, pixels which segmented as non-background will be added to the selected layer.
     - **Replace Segmentations:** the selected layer content will be replaced with the result.
 8. **Predict Prompts button:** to do the prediction using SAM's predictor.  
-<br><br>
+<br><br><br><br>
 
+**AI4Life** has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement number 101057970. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.  
