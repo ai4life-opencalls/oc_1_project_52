@@ -50,17 +50,19 @@ git clone https://github.com/juglab/napari-sam-labeling-tools
 Then run the following commands:
 ```bash
 cd ./napari-sam-labeling-tools
-pip install -e .
+pip install .
 ```
 
 ## How to use the plugin
 This plugin provides four widgets:
-- [SAM Embedding Extractor](#sam-embedding-extractor-widget)
+- [SAM Embedding Extractor Widget](#sam-embedding-extractor-widget)
 - [SAM-RF Widget](#sam-rf-widget)
     - [Notes](#notes)
 - [SAM Prompt Segmentation Widget](#sam-prompt-segmentation-widget)
 - [SAM Predictor Widget](#sam-predictor-widget)
 
+Firs, you need extract the SAM embedding out of your stack. To do that use [SAM Embedding Extractor Widget](#sam-embedding-extractor-widget) widget.  
+After you extract the embeddings into a storage file, use [SAM-RF Widget](#sam-rf-widget) and start adding some labels for the object of interest vs. the rest(background). *Please remember that you should start with the background and always use label **1** for the background*.
 
 ### SAM Embedding Extractor Widget
 The first step is to extract the SAM embeddings for the input stack, using the "SAM Embedding Extractor" widget. To do so, simply choose where to save the embedding storage file and hit the "Extract" button.  
@@ -108,6 +110,7 @@ The number of required labels for having almost nice-looking segmentations compa
 <br>
 
 #### Notes
+- You should always use label **1** for the background class.
 - If your stack is large, extracting embeddings can take a long time and creates a huge storage file. Therefore, it is recommended to use a sub-stack of the original stack by selecting a few slices from the beginning of the stack, a few in the middle, and a few slices from the end. Then use this sub-stack to train the RF model, save it, and then use it for prediction over the whole stack.  
 To do so, we provided a **[jupyter notebook](./run_pipeline_for_whole_stack/run_pipeline.ipynb)** that you can use with just setting the input and saved RF model path.  
 

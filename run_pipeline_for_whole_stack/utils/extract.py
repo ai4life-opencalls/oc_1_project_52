@@ -3,7 +3,7 @@ import h5py
 import torch
 from torchvision import transforms
 
-from tqdm.notebook import trange, tqdm
+from tqdm.notebook import tqdm
 
 from .data import (
     patchify, get_target_patches,
