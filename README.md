@@ -62,7 +62,8 @@ This plugin provides four widgets:
 - [SAM Predictor Widget](#sam-predictor-widget)
 
 Firs, you need extract the SAM embedding out of your stack. To do that use [SAM Embedding Extractor Widget](#sam-embedding-extractor-widget) widget.  
-After you extract the embeddings into a storage file, use [SAM-RF Widget](#sam-rf-widget) and start adding some labels for the object of interest vs. the rest(background). *Please remember that you should start with the background and always use label **1** for the background*.
+After you extract the embeddings into a storage file, use [SAM-RF Widget](#sam-rf-widget) and start adding some labels for the object of interest vs. the rest(background). *Please remember that you should start with the background and always use label **1** for the background*.  
+<br><br>
 
 ### SAM Embedding Extractor Widget
 The first step is to extract the SAM embeddings for the input stack, using the "SAM Embedding Extractor" widget. To do so, simply choose where to save the embedding storage file and hit the "Extract" button.  
