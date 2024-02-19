@@ -55,17 +55,44 @@ pip install .
 ```
 
 ## How to use the plugin
+First, you need extract the SAM embedding out of your stack. To do that use [SAM Embedding Extractor Widget](#sam-embedding-extractor-widget) widget.  
+After you extract the embeddings into a storage file, use [SAM-RF Widget](#sam-rf-widget) and start adding some labels for the object of interest vs. the rest (background). *Please remember that you should start with the background and always use label **1** for the background*.   
+
 This plugin provides four widgets:
 - [SAM Embedding Extractor Widget](#sam-embedding-extractor-widget)
 - [SAM-RF Widget](#sam-rf-widget)
     - [Notes](#notes)
 - [SAM Prompt Segmentation Widget](#sam-prompt-segmentation-widget)
-- [SAM Predictor Widget](#sam-predictor-widget)
-
-Firs, you need extract the SAM embedding out of your stack. To do that use [SAM Embedding Extractor Widget](#sam-embedding-extractor-widget) widget.  
-After you extract the embeddings into a storage file, use [SAM-RF Widget](#sam-rf-widget) and start adding some labels for the object of interest vs. the rest(background). *Please remember that you should start with the background and always use label **1** for the background*.  
+- [SAM Predictor Widget](#sam-predictor-widget) 
 <br><br>
 
+## Plugin Showcase
+**Data was provided by _Johan Decelle_, _Kedige Ananya Rao_ and _Toullec Gaëlle Delphine_ from Université Grenoble Alpes, France.**  
+
+- Extracting the SAM Embeddings:
+<img src="images/user_data_shots/plugin_extract_embeddings.png" width=600 alt="embedding extractor" />
+
+- Using SAM-RF Widget:
+  - Adding Labels
+  <img src="images/user_data_shots/plugin_sam_rf_1.png" width=600 alt="sam-rf 1" />
+  - Prediction Progress
+  <img src="images/user_data_shots/plugin_sam_rf_2.png" width=600 alt="sam-rf 2" />
+  - Prediction Result
+  <img src="images/user_data_shots/plugin_sam_rf_3.png" width=600 alt="sam-rf 3" />
+  - Prediction Result with Post-Processing
+  <img src="images/user_data_shots/plugin_sam_rf_4.png" width=600 alt="sam-rf 4" />
+  - Segmentation Result for 5 Classes
+  <img src="images/user_data_shots/plugin_sam_rf_5.png" width=600 alt="sam-rf 5" />
+
+- Using SAM Predictor Widget:
+  - Point Prompts
+  <img src="images/user_data_shots/plugin_sam_predictor_1.png" width=600 alt="sam-p 1" />
+  - Box Prompts
+  <img src="images/user_data_shots/plugin_sam_predictor_2.png" width=600 alt="sam-p 2" />
+
+<br><br>
+
+## Widgets
 ### SAM Embedding Extractor Widget
 The first step is to extract the SAM embeddings for the input stack, using the "SAM Embedding Extractor" widget. To do so, simply choose where to save the embedding storage file and hit the "Extract" button.  
 
