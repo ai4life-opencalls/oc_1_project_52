@@ -74,21 +74,26 @@ This plugin provides four widgets:
 
 - Using SAM-RF Widget:
   - Adding Labels
-  <img src="images/user_data_shots/plugin_sam_rf_1.png" width=600 alt="sam-rf 1" />
+  <img src="images/user_data_shots/plugin_sam_rf_1.png" width=600 alt="sam-rf 1" />  
+
   - Prediction Progress
-  <img src="images/user_data_shots/plugin_sam_rf_2.png" width=600 alt="sam-rf 2" />
+  <img src="images/user_data_shots/plugin_sam_rf_2.png" width=600 alt="sam-rf 2" />  
+
   - Prediction Result
-  <img src="images/user_data_shots/plugin_sam_rf_3.png" width=600 alt="sam-rf 3" />
+  <img src="images/user_data_shots/plugin_sam_rf_3.png" width=600 alt="sam-rf 3" />  
+
   - Prediction Result with Post-Processing
-  <img src="images/user_data_shots/plugin_sam_rf_4.png" width=600 alt="sam-rf 4" />
+  <img src="images/user_data_shots/plugin_sam_rf_4.png" width=600 alt="sam-rf 4" />  
+
   - Segmentation Result for 5 Classes
-  <img src="images/user_data_shots/plugin_sam_rf_5.png" width=600 alt="sam-rf 5" />
+  <img src="images/user_data_shots/plugin_sam_rf_5.png" width=600 alt="sam-rf 5" />  
 
 - Using SAM Predictor Widget:
   - Point Prompts
-  <img src="images/user_data_shots/plugin_sam_predictor_1.png" width=600 alt="sam-p 1" />
+  <img src="images/user_data_shots/plugin_sam_predictor_1.png" width=600 alt="sam-p 1" />  
+
   - Box Prompts
-  <img src="images/user_data_shots/plugin_sam_predictor_2.png" width=600 alt="sam-p 2" />
+  <img src="images/user_data_shots/plugin_sam_predictor_2.png" width=600 alt="sam-p 2" />  
 
 <br><br>
 
