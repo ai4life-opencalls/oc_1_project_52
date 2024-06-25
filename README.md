@@ -4,6 +4,8 @@
   </a>
 </p>
 
+[![DOI](https://zenodo.org/badge/749089139.svg)](https://zenodo.org/doi/10.5281/zenodo.12531849)
+
 # Project #52: Atlas of Symbiotic partnerships in plankton revealed by 3D electron microscopy
 ---
 
