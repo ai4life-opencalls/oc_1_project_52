@@ -4,7 +4,8 @@
   </a>
 </p>
 
-[![DOI](https://zenodo.org/badge/749089139.svg)](https://zenodo.org/doi/10.5281/zenodo.12531849)
+[![DOI](https://zenodo.org/badge/749089139.svg)](https://zenodo.org/doi/10.5281/zenodo.12531849)  
+[![Data](https://www.ebi.ac.uk/em_static/empiar/favicon/favicon-32x32.png)](https://www.ebi.ac.uk/empiar/EMPIAR-12627/)
 
 # Project #52: Atlas of Symbiotic partnerships in plankton revealed by 3D electron microscopy
 ---
