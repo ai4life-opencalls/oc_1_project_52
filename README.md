@@ -58,6 +58,11 @@ pip install .
 ```
 
 ## How to use the plugin
+
+> [!NOTE]
+> Since the end of this project, `napari-sam-labeling-tool` has been renamed [FeatureForest](https://github.com/juglab/featureforest)
+> and published in [Seifi et al, npj Imaging (2025)](https://www.nature.com/articles/s44303-025-00089-9).
+
 First, you need extract the SAM embedding out of your stack. To do that use [SAM Embedding Extractor Widget](#sam-embedding-extractor-widget) widget.  
 After you extract the embeddings into a storage file, use [SAM-RF Widget](#sam-rf-widget) and start adding some labels for the object of interest vs. the rest (background). *Please remember that you should start with the background and always use label **1** for the background*.   
 
@@ -199,4 +204,22 @@ This widget works nicely for objects having more clear boundaries. It also can b
 8. **Predict Prompts button:** to do the prediction using SAM's predictor.  
 <br><br><br><br>
 
+### Cite FeatureForest
+
+If you use the napari plugin developed in this call, please cite FeatureForest:
+
+```
+@article{seifi2025featureforest,
+  title={FeatureForest: the power of foundation models, the usability of random forests},
+  author={Seifi, Mehdi and Dalle Nogare, Damian and Battagliotti, Juan Manuel and Galinova, Vera and Rao, Ananya Kedige and Jouneau, Pierre-Henri and Archit, Anwai and Pape, Constantin and Decelle, Johan and others},
+  journal={npj Imaging},
+  volume={3},
+  number={1},
+  pages={32},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
+}
+```
+
+### Acknowledgments
 **AI4Life** has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement number 101057970. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.  
